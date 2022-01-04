@@ -1,0 +1,10 @@
+<h1>投稿編集</h1>
+<%= form_with model:@post, url:"/posts/#{@post.id}", local:true do |f| %>
+    <h4>タイトル</h4>
+    <%= f.text_field :title %>
+    <h4>詳細</h4>
+    <%= f.text_area :description %>
+    <br>
+    <br>
+    <%= f.submit '更新' %>
+<% end %>
