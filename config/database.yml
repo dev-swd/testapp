@@ -84,5 +84,6 @@ test:
 production:
   <<: *default
   database: testapp_production
-  username: testapp
-  password: <%= ENV["TESTAPP_DATABASE_PASSWORD"] %>
+#  username: testapp
+#  password: <%= ENV["TESTAPP_DATABASE_PASSWORD"] %>
+  host: database-1.czoseaouopbx.ap-northeast-1.rds.amazonaws.com
